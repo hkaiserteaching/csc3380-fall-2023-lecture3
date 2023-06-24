@@ -4,3 +4,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(date_time code/date_time.cpp)
 add_executable(file_system code/file_system.cpp)
+add_executable(revisiting_io code/revisiting_io.cpp)
