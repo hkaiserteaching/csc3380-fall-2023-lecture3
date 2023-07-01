@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <sstream>
 
 struct X
 {
@@ -57,6 +58,19 @@ void file_io()
 
         std::cout << "line == " << line << "\n";    // line == "Hello World!"
     }
+}
+
+void string_io()
+{
+    std::string line;
+
+    {
+        std::stringstream strm;
+        strm << "Hello world!";
+        line = strm.str();
+    }
+
+    std::cout << "line == " << line << "\n";    // line == "Hello World!"
 }
 
 int main()
